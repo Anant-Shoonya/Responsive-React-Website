@@ -1,0 +1,76 @@
+.about{
+    margin: 100px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.about-left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right{
+  flex-basis: 56%;  /*  so now the remaing 4% of space will the gap between the two divs that is about right and about left */
+}
+
+.aboutImg{
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+#Capa_1{
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.about h3{
+    font-weight: 600;
+    font-size: 16px;
+    color: #212EA0;
+}
+
+.about h2{
+    font-size: 35px;
+    color: #000F38;
+    margin: 10px auto;
+    max-width: 400px;
+    margin-left: 0;
+}
+
+.about p{
+    margin-bottom: 16px;
+    color: #676767;
+}
+
+
+.caption{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    /* background: rgba(0,15,152,0.3); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* color: white; */
+    cursor: pointer;
+    opacity: 0;
+    padding-top: 70%;
+    transition: 0.4s;
+}
+
+.about-left:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+}
+
